@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${env:PICO_SDK_PATH}/**/include/**",
+                "${env:PICO_SDK_PATH}/**",
+                "${workspaceFolder}/build/generated/pico_base",
                 "${workspaceFolder}/**",
                 "${default}"
             ],
