@@ -13,6 +13,21 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "MacOS",
+            "includePath": [
+                "${env:PICO_SDK_PATH}/**",
+                "${workspaceFolder}/build/generated/pico_base",
+                "${workspaceFolder}/**",
+                "${default}"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
