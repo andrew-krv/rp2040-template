@@ -3,17 +3,23 @@ Template project for RP2040 controller
 
 # SDK setup
 
-## Linux specific
+# Unix
 
-### Prerequisites
+## Prerequisites
 
-sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib
+### Linux
+
+sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib build-essential
+
+### MacOS
+
+brew install cmake && brew install git && brew install gcc-arm-embedded
 
 ### Obtaining SDK
 
 cd $HOME
-mkdir rpi-sdk
-git clone https://github.com/raspberrypi/pico-sdk.git && cd pico-sdk && git checkout 2ccab11
+mkdir rpi-sdk && cd rpi-sdk
+git clone https://github.com/raspberrypi/pico-sdk.git && cd pico-sdk && git checkout 1.5.0 && git submodule update --init
 
 nano .bashrc
 ***Add line export PICO_SDK_PATH=$HOME/rpi-sdk/pico-sdk***
