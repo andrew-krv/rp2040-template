@@ -23,7 +23,7 @@ brew install cmake && brew install git && brew install gcc-arm-embedded
 
 ## Windows
 
-Install [Arm GNU Toolchain](https://developer.arm.com/downloads/-/gnu-rm), CMake and Visual Studio
+Install [Arm GNU Toolchain](https://developer.arm.com/downloads/-/gnu-rm), CMake, Python3 and Visual Studio
 
 ---
 
@@ -54,6 +54,6 @@ Add SDK folder to system Environment variables
 # Project setup
 
 Simple configuration with either commandline CMake, GUI CMake or CMake extension
-in Visual Studio Code
+in Visual Studio Code. [Windows](https://len42.github.io/rp2040-dev-setup.html) setup guide is located here
 
 ---
