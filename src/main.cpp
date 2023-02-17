@@ -50,7 +50,7 @@ void gpio_callback(uint gpio, uint32_t events) {
 }
 
 void init_gpio_irq() {
-    constexpr auto irq_mask = GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL;
+    constexpr auto irq_mask = GPIO_IRQ_EDGE_RISE;
     gpio_set_irq_enabled_with_callback(irq_pin, irq_mask, true, &gpio_callback);
 }
 
