@@ -35,7 +35,7 @@ Install [Arm GNU Toolchain](https://developer.arm.com/downloads/-/gnu-rm), CMake
 cd $HOME && mkdir rpi-sdk && cd rpi-sdk
 git clone https://github.com/raspberrypi/pico-sdk.git && cd pico-sdk && git checkout 1.5.0 && git submodule update --init
 
-nano .bashrc #Add line: export PICO_SDK_PATH=$HOME/rpi-sdk/pico-sdk
+nano $HOME/.bashrc #Add line: export PICO_SDK_PATH=$HOME/rpi-sdk/pico-sdk
 ```
 
 ## Windows
