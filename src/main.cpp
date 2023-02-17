@@ -61,13 +61,14 @@ void init_gpio_irq() {
 
 void on_pwm_wrap() {
     static int fade = 0;
+
+    pwm_clear_irq(pwm_gpio_to_slice_num(pwm_pin));
+
     if (fade == level) {
         return;
     }
 
     fade += (level > fade) ? 1 : -1;
-
-    pwm_clear_irq(pwm_gpio_to_slice_num(pwm_pin));
     pwm_set_gpio_level(pwm_pin, fade * fade);
 }
 
